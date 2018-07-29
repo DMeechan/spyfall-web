@@ -23,3 +23,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# Files in /private/
+private/firebase-credentials.js

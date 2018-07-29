@@ -11,9 +11,12 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
+    "@firebase/app": "^0.3.3",
+    "@firebase/firestore": "^0.6.0",
     "bulma": "^0.7.1",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16",
+    "vue-firestore": "^0.2.9",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
