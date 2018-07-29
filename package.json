@@ -7,9 +7,12 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "vue-cli-service test:e2e",
+    "test": "vue-cli-service test:e2e --staging"
   },
   "dependencies": {
+    "bulma": "^0.7.1",
+    "frosted-glass": "^0.3.1",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.16"
   },

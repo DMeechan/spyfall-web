@@ -26,9 +26,14 @@ Used in production:
 
 - [Vue.js](https://vuejs.org/v2/guide/index.html)
 - [Bulma](https://bulma.io/)
+- Frosted glass
 - [Netlify](http://netlify.com/)
 - [CloudFlare](https://www.cloudflare.com/)
 
 Used for development & testing:
 
 - [Node.js](https://nodejs.org/en/)
+- Webpack
+- Cypress
+- Mocha
+- Chai
