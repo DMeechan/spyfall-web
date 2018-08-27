@@ -1,6 +1,6 @@
 import { getRandomInt } from './random';
 import WORDLIST from './wordlist';
-// import db from './firebase';
+import firebaseDb from '../main';
 
 export default class Match {
   constructor(deck = 'Spyfall 1', duration = 8) {

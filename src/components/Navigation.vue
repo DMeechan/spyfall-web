@@ -1,23 +1,31 @@
 <template>
-    <nav class="navbar is-light is-transparent">
+    <nav id="nav" class="navbar is-light is-transparent">
         <!-- is-fixed-top -->
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item">
+                <router-link
+                    class="navbar-item"
+                    to="/">
                     Spyfall
-                </a>
+                </router-link>
             </div>
             <div id="navbarMenu" class="navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item is-active" href="#">
+                    <router-link
+                        class="navbar-item is-active"
+                        to="/">
                         Home
-                    </a>
-                    <a class="navbar-item" href="#about">
+                    </router-link>
+                    <router-link
+                        class="navbar-item"
+                        to="/about">
                         About
-                    </a>
-                    <a class="navbar-item" href="#language">
+                    </router-link>
+                    <router-link
+                        class="navbar-item"
+                        to="/language">
                         Language
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </div>
