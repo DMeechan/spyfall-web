@@ -12,7 +12,7 @@
             <div id="navbarMenu" class="navbar-menu">
                 <div class="navbar-end">
                     <router-link
-                        class="navbar-item is-active"
+                        class="navbar-item"
                         to="/">
                         Home
                     </router-link>

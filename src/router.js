@@ -10,6 +10,8 @@ import Waiting from './pages/Waiting.vue';
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
+  linkExactActiveClass: 'is-active',
   routes: [
     {
       path: '/',
