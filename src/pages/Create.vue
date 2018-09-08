@@ -1,36 +1,44 @@
 <template>
     <Container id="create" title="Create Game">
-        <p>
-            What's your player name?
-        </p>
-        <input
-            class="input"
-            type="text"
-            placeholder="Enter your player name"
-            v-model="playerName">
-        <p>
-            Which game deck do you want to use?
-        </p>
-        <div class="buttons has-addons is-centered">
-            <span
-                :class="getClass('Spyfall 1')"
-                @click="switchDeck">
-                Spyfall 1
-            </span>
-            <span
-                :class="getClass('Spyfall 2')"
-                @click="switchDeck">
-                Spyfall 2
-            </span>
-        </div>
-        <p>
-            How long should each match last (in minutes)?
-        </p>
-        <input
-            class="input"
-            type="text"
-            placeholder="Enter match length"
-            v-model="matchLength">
+        <hr></hr>
+        <article class="bigger-bottom">
+            <FieldLabel>
+                What's your player name?
+            </FieldLabel>
+            <input
+                class="input"
+                type="text"
+                placeholder="Enter your player name"
+                v-model="playerName">
+        </article>
+        <article class="bigger-bottom">
+            <FieldLabel>
+                Which game deck do you want to use?
+            </FieldLabel>
+            <div class="buttons has-addons is-centered">
+                <span
+                    :class="getClass('Spyfall 1')"
+                    @click="switchDeck">
+                    Spyfall 1
+                </span>
+                <span
+                    :class="getClass('Spyfall 2')"
+                    @click="switchDeck">
+                    Spyfall 2
+                </span>
+            </div>
+        </article>
+        <article class="bigger-bottom">
+            <FieldLabel>
+                How long should each match last (in minutes)?
+            </FieldLabel>
+            <input
+                class="input"
+                type="text"
+                placeholder="Enter match length"
+                v-model="matchLength">
+        </article>
+        <hr>
         <a class="button is-primary is-large" @click="createGame">
             Create Game
         </a>
@@ -72,4 +80,7 @@ export default {
 </script>
 
 <style lang="scss">
+.bigger-bottom {
+    margin-bottom: 3.5rem;
+}
 </style>

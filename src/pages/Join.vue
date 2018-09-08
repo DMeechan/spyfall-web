@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import { firebaseDb } from '../main.js';
-import { getRandomInt } from '../utils/random.js';
+import { firebaseDb } from '../main';
+import { getRandomInt } from '../utils/random';
 
 export default {
   name: 'Join',
